@@ -1,7 +1,7 @@
 # Личный проект «Девайс»
 
 * Студент: [Тёма Истомин](https://up.htmlacademy.ru/htmlcss/30/user/1646629).
-* Наставник: `Неизвестно`.
+* Наставник: [Максим Кузнецов](https://htmlacademy.ru/profile/knenkne).
 
 ---
 
