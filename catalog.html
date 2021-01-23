@@ -8,18 +8,18 @@
 	<header>
   		<a href="index.html"><h1>DEVICE</h1></a>
   		<input type="text" placeholder="Поиск по сайту">
+  		<ul>
+  		    <li><a href="#">Войти</a></li>
+  			<li><a href="#">Сравнить</a></li>
+  		    <li><a href="#">Корзина</a></li>
+  		</ul>
   		<nav>
   			<ul>
-  				<li><a href="#">Войти</a></li>
-  			    <li><a href="#">Сравнить</a></li>
-  		        <li><a href="#">Корзина</a></li>
+  				<li><a href="#">Каталог товаров</a></li>
+  				<li><a href="#">Доставка</a></li>
+  				<li><a href="#">Гарантия</a></li>
+  				<li><a href="#">Контакты</a></li>
   			</ul>
-  		</nav>
-  		<nav>
-  			<li><a href="catalog.html">Каталог товаров</a></li>
-  			<li><a href="#">Доставка</a></li>
-  			<li><a href="#">Гарантия</a></li>
-  			<li><a href="#">Контакты</a></li>
   		</nav>
   	</header>
   	<main>
@@ -27,7 +27,7 @@
   			<h2>Моноподы для селфи</h1>
   			<ul>
   				<li><a href="index.html">Главная</a></li>
-  				<li><a href="catalog.html">Каталог товаров</a></li>
+  				<li><a href="#">Каталог товаров</a></li>
   				<li>Моноподы для селфи</li>
   			</ul>
   		</section>
@@ -36,27 +36,27 @@
   			<form method="get" action="https://echo.htmlacademy.ru/">
   				<fieldset>
   					<legend>Стоимость</legend>
-  					<input type="range">
+  					<input type="range" min="0" max="8500" value="5000">
   				</fieldset>
   				<fieldset>
   					<legend>Цвет</legend>
   					<ul>
-  						<li><label><input type="checkbox" name="black" checked>Чёрный</label></li>
-  					    <li><label><input type="checkbox" name="white">Белый</label></li>
-  					    <li><label><input type="checkbox" name="blue" checked>Синий</label></li>
-  					    <li><label><input type="checkbox" name="red" checked>Красный</label></li>
-  					    <li><label><input type="checkbox" name="pink">Розовый</label></li>
+  						<li><label><input type="checkbox" name="black" value="black" checked>Чёрный</label></li>
+  					    <li><label><input type="checkbox" name="white" value="white">Белый</label></li>
+  					    <li><label><input type="checkbox" name="blue" value="blue" checked>Синий</label></li>
+  					    <li><label><input type="checkbox" name="red" value="red" checked>Красный</label></li>
+  					    <li><label><input type="checkbox" name="pink" value="pink">Розовый</label></li>
   					</ul>
   				</fieldset>
   				<fieldset>
   					<legend>Bluetooth</legend>
   					<ul>
   						<li>
-  					        <input id="bluetooth-yes" type="radio" name="bluetooth" checked>
+  					        <input id="bluetooth-yes" type="radio" name="bluetooth" value="bluetooth-yes" checked>
   					        <label for="bluetooth-yes">Есть</label>
   					    </li>
   					    <li>
-  					        <input id="bluetooth-no" type="radio" name="bluetooth">
+  					        <input id="bluetooth-no" type="radio" name="bluetooth" value="bluetooth-no">
   					        <label for="bluetooth-no">Нет</label>
   					    </li>
   					</ul>
@@ -73,32 +73,24 @@
   			</ul>
   			<ul>
   				<li>
-  					<a href="catalog.html">
-  						<img src="https://via.placeholder.com/360x380" alt="">
-  						<h4>Любительская селфи-палка</h4>
-  						<span>1 100 руб.</span>
-  					</a>
+  					<img src="https://via.placeholder.com/360x380" alt="Любительская селфи-палка">
+  					<h4>Любительская селфи-палка</h4>
+  					<span>1 100 руб.</span>
   				</li>
   				<li>
-  					<a href="catalog.html">
-  						<img src="https://via.placeholder.com/360x380" alt="">
-  						<h4>Профессиональная<br>селфи-палка</h4>
-  						<span>1 500 руб.</span>
-  					</a>
+  					<img src="https://via.placeholder.com/360x380" alt="Профессиональная селфи-палка">
+  					<h4>Профессиональная<br>селфи-палка</h4>
+  					<span>1 500 руб.</span>
   				</li>
   				<li>
-  					<a href="catalog.html">
-  						<img src="https://via.placeholder.com/360x380" alt="">
-  						<h4>Непотопляемая<br>селфи-палка</h4>
-  						<span>1 500 руб.</span>
-  					</a>
+  					<img src="https://via.placeholder.com/360x380" alt="Непотопляемая селфи-палка">
+  					<h4>Непотопляемая<br>селфи-палка</h4>
+  					<span>1 500 руб.</span>
   				</li>
   				<li>
-  					<a href="catalog.html">
-  						<img src="https://via.placeholder.com/360x380" alt="">
-  						<h4>Селфи-палка «Следуй за<br>мной»</h4>
-  						<span>1 900 руб.</span>
-  					</a>
+  					<img src="https://via.placeholder.com/360x380" alt="Селфи-палка «Следуй за мной»">
+  					<h4>Селфи-палка «Следуй за<br>мной»</h4>
+  					<span>1 900 руб.</span>
   				</li>
   			</ul>
   			<button type="button">Назад</button>
@@ -117,7 +109,7 @@
   			<li><a href="#">Сравнить</a></li>
   			<li><a href="#">Корзина</a></li>
   		</ul>
-  			<a href="">г. Москва, ул. Строителей, 15</a>
+  			<p>г. Москва, ул. Строителей, 15</p>
   			<nav>
   				<ul>
   					<li><a href="#">Доставка</a></li>
@@ -131,7 +123,7 @@
   			<li><a href="#">Instagram</a></li>
   			<li><a href="#">Twitter</a></li>
   		</ul>
-  		<a href="#">HTML Academy</a>
+  		<a href="#"><img src="https://via.placeholder.com/27x34" alt="HTML Academy">HTML Academy</a>
   	</footer>
 </body>
 </html>
