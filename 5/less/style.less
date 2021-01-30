@@ -55,7 +55,7 @@
 
 body{
 	font-style:normal;
-	font-family:"Open sans";
+	font-family:"Open sans light";
 	font-weight: 300;
 	font-size: 15px;
 	line-height: 20px;
@@ -142,6 +142,9 @@ a{
 		&:focus img, &:focus h2{
 			opacity:30%;
 		}
+		&:focus .popular-icon{
+			background-color:@special-yellow-dark;
+		}
 	}
 }
 
@@ -204,7 +207,7 @@ a{
 		letter-spacing: 20%;
 	}
 	p{
-		font-family:"Open sans";
+		font-family:"Open sans light";
 		line-height: 28px;
 	}
 	.company-delivery-list{
@@ -236,4 +239,87 @@ a{
 			line-height: 22px;
 		}
 	}
+}
+
+
+
+
+/*breadcrumbs*/
+
+.breadcrumbs-list{
+	a, li{
+		opacity:0.3;
+		font-size: 14px;
+		line-height: 19px;
+	}
+}
+
+
+
+/*filter*/
+
+.filter{
+	background-color:@basic-grey-light;
+	h3{
+		font-family:"Gilroy Extrabold";
+		font-size:16px;
+		letter-spacing: 10%;
+		background-color:#dcdcdc;
+	}
+	legend{
+		font-family:"Gilroy Extrabold";
+		font-size: 14px;
+		line-height: 17px;
+		letter-spacing: 10%;
+	}
+	input{
+		font-size: 14px;
+		line-height: 19px;
+	}
+	button{
+		font-family:"Gilroy Extrabold";
+		font-size:18px;
+		line-height: 22px;
+		letter-spacing: 20%;
+	}
+}
+
+
+
+/*catalog*/
+
+.sorting{
+	background-color:@basic-grey-light;
+	h3{
+		font-family:"Gilroy Extrabold";
+		font-size:16px;
+		letter-spacing: 10%;
+	}
+	&-menu{
+		a{
+			font-family:"Open sans";
+			font-size: 14px;
+			line-height: 19px;
+		}
+	}
+}
+.catalog-item{
+	h4{
+		font-family:"Gilroy Extrabold";
+		font-size: 18px;
+		letter-spacing: 5%;
+		line-height: 22px;
+	}
+	span{
+		font-family:"Gilroy";
+		font-size: 16px;
+		line-height: 18px;
+		letter-spacing: 5%;
+	}
+}
+.catalog-navigation{
+	background-color:@basic-grey-light;
+	font-family:"Gilroy Extrabold";
+	font-size: 16px;
+	letter-spacing: 10%;
 }

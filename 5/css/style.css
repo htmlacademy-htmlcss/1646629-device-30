@@ -27,7 +27,7 @@
 /*global*/
 body {
   font-style: normal;
-  font-family: "Open sans";
+  font-family: "Open sans light";
   font-weight: 300;
   font-size: 15px;
   line-height: 20px;
@@ -99,6 +99,9 @@ a:focus {
 .popular-products a:focus h2 {
   opacity: 30%;
 }
+.popular-products a:focus .popular-icon {
+  background-color: #f0c52e;
+}
 /*services*/
 .services-list .services-item {
   font-family: "Gilroy Extrabold";
@@ -137,7 +140,7 @@ a:focus {
   letter-spacing: 20%;
 }
 .information-block p {
-  font-family: "Open sans";
+  font-family: "Open sans light";
   line-height: 28px;
 }
 .information-block .company-delivery-list {
@@ -162,4 +165,69 @@ a:focus {
   font-size: 18px;
   letter-spacing: 20%;
   line-height: 22px;
+}
+/*breadcrumbs*/
+.breadcrumbs-list a,
+.breadcrumbs-list li {
+  opacity: 0.3;
+  font-size: 14px;
+  line-height: 19px;
+}
+/*filter*/
+.filter {
+  background-color: #e5e5e5;
+}
+.filter h3 {
+  font-family: "Gilroy Extrabold";
+  font-size: 16px;
+  letter-spacing: 10%;
+  background-color: #dcdcdc;
+}
+.filter legend {
+  font-family: "Gilroy Extrabold";
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 10%;
+}
+.filter input {
+  font-size: 14px;
+  line-height: 19px;
+}
+.filter button {
+  font-family: "Gilroy Extrabold";
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 20%;
+}
+/*catalog*/
+.sorting {
+  background-color: #e5e5e5;
+}
+.sorting h3 {
+  font-family: "Gilroy Extrabold";
+  font-size: 16px;
+  letter-spacing: 10%;
+}
+.sorting-menu a {
+  font-family: "Open sans";
+  font-size: 14px;
+  line-height: 19px;
+}
+.catalog-item h4 {
+  font-family: "Gilroy Extrabold";
+  font-size: 18px;
+  letter-spacing: 5%;
+  line-height: 22px;
+}
+.catalog-item span {
+  font-family: "Gilroy";
+  font-size: 16px;
+  line-height: 18px;
+  letter-spacing: 5%;
+}
+.catalog-navigation {
+  background-color: #e5e5e5;
+  font-family: "Gilroy Extrabold";
+  font-size: 16px;
+  letter-spacing: 10%;
 }
