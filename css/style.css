@@ -1,0 +1,165 @@
+/*fonts*/
+@font-face {
+  font-family: "Gilroy";
+  font-weight: 400;
+  font-style: normal;
+  src: url(../fonts/gilroylight.woff2) format("woff2"), url(../fonts/gilroylight.woff) format("woff");
+}
+@font-face {
+  font-family: "Gilroy Extrabold";
+  font-weight: 800;
+  font-style: normal;
+  src: url(../fonts/gilroyextrabold.woff2) format("woff2"), url(../fonts/gilroyextrabold.woff) format("woff");
+}
+@font-face {
+  font-family: "Open sans";
+  font-weight: 400;
+  font-style: normal;
+  src: local("Gilroy"), url(../fonts/opensanslight.woff2) format("woff2"), url(../fonts/opensanslight.woff) format("woff");
+}
+@font-face {
+  font-family: "Open sans light";
+  font-weight: 300;
+  font-style: normal;
+  src: local("Gilroy"), url(../fonts/opensanslight.woff2) format("woff2"), url(../fonts/opensanslight.woff) format("woff");
+}
+/*custom colour*/
+/*global*/
+body {
+  font-style: normal;
+  font-family: "Open sans";
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 20px;
+  color: #000000;
+}
+a {
+  color: #000000;
+}
+a:hover {
+  opacity: 60%;
+}
+a:focus {
+  opacity: 30%;
+}
+/*header*/
+.main-header {
+  background-color: #f7e296;
+}
+.main-header .main-navigation a {
+  font-family: "Gilroy Extrabold";
+  font-size: 18px;
+  letter-spacing: 20%;
+  line-height: 22px;
+}
+/*slider*/
+.slider {
+  font-family: "Gilroy Extrabold";
+}
+.slider h1 {
+  font-size: 179px;
+  line-height: 219px;
+  color: #ffffff;
+}
+.slider h2 {
+  font-size: 47px;
+  line-height: 58px;
+}
+.slider a {
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 20%;
+}
+.slider td {
+  font-family: "Gilroy";
+  font-size: 36px;
+  line-height: 42px;
+  letter-spacing: 10%;
+}
+.slider th {
+  font-family: "Gilroy";
+  font-size: 13px;
+  line-height: 15px;
+  letter-spacing: 10%;
+}
+/*popular*/
+.popular-products {
+  font-family: "Gilroy Extrabold";
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 5%;
+}
+.popular-products .popular-icon {
+  background-color: #f7e296;
+}
+.popular-products a:hover .popular-icon {
+  background-color: #f0c52e;
+}
+.popular-products a:focus img,
+.popular-products a:focus h2 {
+  opacity: 30%;
+}
+/*services*/
+.services-list .services-item {
+  font-family: "Gilroy Extrabold";
+  letter-spacing: 20%;
+  background-color: #e5e5e5;
+}
+.services-list h2 {
+  font-size: 47px;
+  line-height: 58px;
+}
+.services-list p {
+  line-height: 30px;
+}
+.services-list button {
+  font-size: 18px;
+}
+.services-list .delivery li:first-child button {
+  color: #f7e296;
+  background-color: #000000;
+}
+.services-list .warranty li:nth-child(2) button {
+  color: #f7e296;
+  background-color: #000000;
+}
+.services-list .credit li:last-child button {
+  color: #f7e296;
+  background-color: #000000;
+}
+/*information-contacts*/
+.information-block {
+  font-family: "Gilroy Extrabold";
+}
+.information-block h2 {
+  font-size: 47px;
+  line-height: 58px;
+  letter-spacing: 20%;
+}
+.information-block p {
+  font-family: "Open sans";
+  line-height: 28px;
+}
+.information-block .company-delivery-list {
+  font-size: 16px;
+  line-height: 28px;
+}
+.information-block .contact-us {
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 20%;
+}
+/*footer*/
+.footer {
+  background-color: #363636;
+  color: #ffffff;
+}
+.footer a {
+  color: #ffffff;
+}
+.footer .main-navigation a {
+  font-family: "Gilroy Extrabold";
+  font-size: 18px;
+  letter-spacing: 20%;
+  line-height: 22px;
+}
