@@ -408,14 +408,20 @@ ul{
 /*container cotalog.html*/
 
 .page-catalog{
+	margin: 0 auto;
 	display:grid;
 	grid-template-columns:330px 2fr;
+	grid-template-rows:70px 1fr;
 }
 
 
 
 /*breadcrumbs*/
-
+.breadcrumbs{
+	grid-column:1/2;
+	white-space: nowrap;
+	margin-top: 18px;
+}
 .breadcrumbs-list{
 	display:flex;
 	a, li{
@@ -431,6 +437,10 @@ ul{
 /*filter*/
 
 .filter{
+	padding: 0 0 0 auto;
+	grid-row:2/-1;
+	grid-column:1/2;
+	margin-top: 30px;
 	background-color: var(--basic-grey-light);
 	form{
 		background-color: var(--basic-grey-light);
@@ -467,6 +477,8 @@ ul{
 /*catalog*/
 
 .sorting{
+	height: 70px;
+	margin-top: 30px;
 	display:flex;
 	background-color: var(--basic-grey-light);
 	h3{
@@ -482,6 +494,10 @@ ul{
 			line-height: 19px;
 		}
 	}
+}
+.catalog{
+	grid-row:2/-1;
+	grid-column:2/-1;
 }
 .catalog-list{
 	display:grid;
@@ -514,6 +530,7 @@ ul{
 	font-size: 16px;
 	letter-spacing: 10%;
 	margin:40px 0 78px 72px;
+	max-width: 760px;
 	button{
 		margin:0 30px;
 		background-color: transparent;
