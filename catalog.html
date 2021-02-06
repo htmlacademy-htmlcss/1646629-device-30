@@ -14,25 +14,23 @@
 <body>
 	<header class="main-header">
   		<section class="header">
+  			<a class="logo" href="index.html"><img src="img/logo.svg" alt="Логотип"></a>
   			<div>
-  				<a class="logo" href="index.html"><img src="img/logo.svg" alt="Логотип"></a>
   		        <input class="search" type="text" placeholder="Поиск по сайту">
-  		        <a class="catalog-plus" href="catalog.html">Каталог товаров</a>
-  		    </div>
-  		    <div>
-    		    <ul class="subnav-list subnav-header">
+  		        <ul class="subnav-list subnav-header">
   		        	<li><a href="#">Войти</a></li>
   		            <li><a href="#">Сравнить</a></li>
   	                <li><a href="#">Корзина</a></li>
   		        </ul>
-  		        <nav class="main-navigation">
-  		        	<ul class="header-navigation-list nav">
-  		        		<li><a href="#">Доставка</a></li>
-  		        		<li><a href="#">Гарантия</a></li>
-  		        		<li><a href="#">Контакты</a></li>
-  			        </ul>
-  		        </nav>
   		    </div>
+  		    <nav class="main-navigation">
+  		    	<a class="catalog-plus" href="#">Каталог товаров</a>
+  		        <ul class="header-navigation-list nav">
+  		        	<li><a href="#">Доставка</a></li>
+  		        	<li><a href="#">Гарантия</a></li>
+  		        	<li><a href="#">Контакты</a></li>
+  			    </ul>
+  		    </nav>
   		</section>
   		<section class="menu-products">
   			<ul class="menu-list">
@@ -52,16 +50,15 @@
   		</section>
   	</header>
   		
-   	<main class="container page-catalog">
-  		<section class="breadcrumbs">
+   	<main class="container">
   			<ul class="breadcrumbs-list">
   				<li><a href="index.html">Главная</a></li>
   				<li><a href="#">Каталог товаров</a></li>
   				<li>Моноподы для селфи</li>
   			</ul>
-  		</section>
+  		<div class="page-catalog">
   		<section class="filter">
-  			<div class="fff">
+  			<div class="filter-content">
   			<h3>Фильтр:</h3>
   			<form method="get" action="https://echo.htmlacademy.ru/">
   				<fieldset class="input-range">
@@ -99,9 +96,9 @@
   			<section class="sorting">
   				<h3>Сортировка:</h3>
   			    <ul class="sorting-menu">
-  				    <li><a href="#">По цене</a></li>
-  				    <li><a href="#">По типу</a></li>
-  				    <li><a href="#">По популярности</a></li>
+  				    <li><a class="active-sort" href="#">По цене</a></li>
+  				    <li><a class="sort-item" href="#">По типу</a></li>
+  				    <li><a class="sort-item" href="#">По популярности</a></li>
   			    </ul>
   			</section>
   			<section class="catalog-products">
@@ -138,10 +135,12 @@
   			    <button class="btn btn-next" type="button">Вперед</button>
   			</section>
   		</section>
+  		</div>
   	</main>
   	<footer class="footer">
+  		<div class="footer-content">
   		<div>
-  			<a href=""><img  src="img/icons/footer-icons/logo-footer.svg" alt="Логотип"></a>
+  			<a href="index.html"><img class="logo" src="img/icons/footer-icons/logo-footer.svg" alt="Логотип"></a>
   		    <p class="address">г. Москва, ул. Строителей, 15</p>
   		</div>
   		<div>
@@ -165,7 +164,8 @@
   			    <li><a href="#">Корзина</a></li>
   		    </ul>
   		    <p>Тел.:<a href="tel:+74954959595">+7 (495) 495-95-95</a></p>
-  		    <a class="html-logo" href="#"><img src="img/icons/footer-icons/HTML-Academy-logo.svg" width="27" height="34" alt="HTML Academy">HTML Academy</a>
+  		    <a class="html-logo" href="#"><img src="img/icons/footer-icons/HTML-Academy-logo.svg" width="27" height="34" alt="HTML Academy"></a>
+  		</div>
   		</div>
   	</footer>
 </body>
