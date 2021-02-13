@@ -15,13 +15,15 @@
   	<header class="main-header">
   		<section class="header">
   			<a class="logo" href=""><img src="img/logo.svg" alt="Логотип"></a>
-  			<div>
-  		        <input class="search" type="text" placeholder="Поиск по сайту">
-  		        <ul class="subnav-list subnav-header">
-  		        	<li><a href="#">Войти</a></li>
-  		            <li><a href="#">Сравнить</a></li>
-  	                <li><a href="#">Корзина</a></li>
-  		        </ul>
+  			  <div>
+            <label class="label-search" for="search"></label>
+            <input class="search" id="search" type="text" placeholder="Поиск по сайту">
+            
+  		      <ul class="subnav-list subnav-header">
+  		      	<li><a href="#">Войти</a></li>
+  		        <li><a href="#">Сравнить</a></li>
+  	          <li><a href="#">Корзина</a></li>
+  	        </ul>
   		    </div>
   		    <nav class="main-navigation">
   		    	<a class="catalog-plus" href="catalog.html">Каталог товаров</a>
@@ -32,7 +34,7 @@
   			    </ul>
   		    </nav>
   		</section>
-  		<section class="menu-products">
+  		<section class="menu-products hidden">
   			<ul class="menu-list">
   				<ul class="menu-column">
   					<li><a href="catalog.html">Виртуальная реальность</a></li>
@@ -58,6 +60,11 @@
   		            <h2>Делай селфи,<br>как Бен Стиллер! </h2>
   		            <p>Самая длинная палка для селфи доступна в нашем магазине.<br>Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм</p>
   		            <a href="#">Подробнее</a>
+                  <div class="buttons-slider">
+                      <button class="button-slide button-slide-active"></button>
+                      <button class="button-slide"></button>
+                      <button class="button-slide"></button>
+                  </div>
   		            <table>
   		     	        <tr>
   		     	    	    <td>8,5 м</td>
@@ -72,7 +79,7 @@
   		            </table>
   		        </div>
   			</section>
-  			<section class="slider-item">
+  			<section class="slider-item hidden">
   				<img src="img/slide-photo/smart-watch.png" width="345" height="485" alt="Умные часы">
   				<div class="slider-information">
   					<h1>02</h1>
@@ -89,7 +96,7 @@
   				    </table>
   				</div>
   			</section>
-  			<section class="slider-item">
+  			<section class="slider-item hidden">
   				<img src="img/slide-photo/quadrocopter.png" width="526" height="334" alt="Квадрокоптер">
   				<div class="slider-information">
   					<h1>03</h1>
@@ -150,7 +157,7 @@
   			</ul>
   		</section>
   		<section class="services-list">
-  			<section class="services-item delivery">
+  			<section class="services-item delivery hidden">
   				<ul class="services-navigation">
   				    <li><button>доставка</button></li>
   				    <li><button>гарантия</button></li>
@@ -162,7 +169,7 @@
   			    </div>
   			    <img src="img/icons/services-icons/delivery.svg" alt="Доставка">
   			</section>
-  			<section class="services-item warranty">
+  			<section class="services-item warranty hidden">
   				<ul class="services-navigation">
   				    <li><button>доставка</button></li>
   				    <li><button>гарантия</button></li>
@@ -241,10 +248,32 @@
   			    <li><a href="#">Сравнить</a></li>
   			    <li><a href="#">Корзина</a></li>
   		    </ul>
-  		    <p>Тел.:<a href="tel:+74954959595">+7 (495) 495-95-95</a></p>
+  		    <p class="">Тел.:<a href="tel:+74954959595">+7 (495) 495-95-95</a></p>
   		    <a class="html-logo" href="#"><img src="img/icons/footer-icons/HTML-Academy-logo.svg" width="27" height="34" alt="HTML Academy"></a>
   		</div>
   		</div>
   	</footer>
+    <div class="write-us hidden">
+      <section class="wrapper-form">
+        <button class="close-popup"></button>
+        <form method="get" action="https://echo.htmlacademy.ru/">
+          <div class="user-value">
+            <div class="user-name">
+                <h2>Ваше имя:</h2>
+                <input type="text" placeholder="Имя Фамилия" name="user-name">
+            </div>
+            <div class="user-email">
+                <h2>Ваш e-mail:</h2>
+                <input type="email" placeholder="email@example.com" name="user-email">
+            </div>
+          </div>
+          <div class="letter">
+           <h2>Текст письма:</h2>
+            <textarea placeholder="В свободной форме" name="user-letter"></textarea>
+          </div>
+          <button class="btn-user-submit" type="submit">Отправить</button>
+        </form>
+      </section>
+    </div>
   </body>
 </html>
