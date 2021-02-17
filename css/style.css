@@ -67,10 +67,6 @@ button {
 ul {
   list-style: none;
 }
-.page-index {
-  width: 1160px;
-  margin: 0 auto;
-}
 /*header*/
 .main-header {
   background-color: var(--special-yellow);
@@ -252,6 +248,8 @@ ul {
 }
 /*slider*/
 .slider {
+  width: 1160px;
+  margin: 0 auto;
   z-index: 0;
   position: relative;
   margin-top: -128px;
@@ -402,6 +400,8 @@ ul {
   font-size: 12px;
   line-height: 22px;
   letter-spacing: 5%;
+  width: 1160px;
+  margin: 0 auto;
   margin-bottom: 164px;
 }
 .popular-products a:hover .popular-icon {
@@ -431,7 +431,13 @@ ul {
   grid-gap: 40px;
 }
 /*services*/
+.wrapper-service {
+  background-color: var(--basic-grey-light);
+}
 .services-item {
+  position: relative;
+  width: 1160px;
+  margin: 0 auto;
   font-family: "Gilroy Extrabold", "Arial", sans-serif;
   letter-spacing: 20%;
   background-color: var(--basic-grey-light);
@@ -471,6 +477,10 @@ ul {
   height: 40px;
   transition: 0.4s;
 }
+.services-item img {
+  position: absolute;
+  right: 0;
+}
 .services-info h2 {
   font-size: 47px;
   line-height: 58px;
@@ -509,6 +519,8 @@ ul {
   visibility: hidden;
 }
 .warranty img {
+  position: absolute;
+  right: 0;
   margin-top: -45px;
 }
 .credit li:last-child button {
@@ -529,6 +541,7 @@ ul {
   margin-left: 116px;
 }
 .services-navigation {
+  margin-left: -40px;
   margin-top: -11px;
   position: relative;
 }
@@ -537,19 +550,50 @@ ul {
   position: absolute;
   width: 7px;
   height: 320px;
-  right: -39px;
+  right: 1px;
   bottom: 45px;
   background-color: var(--basic-black);
 }
 /*company*/
 .company-list {
-  margin: 0;
+  width: 1160px;
+  margin: 0 auto;
   padding: 0;
   display: flex;
   justify-content: space-between;
 }
+.logotype {
+  width: 260px;
+  height: 100px;
+}
+.logotype-first {
+  background-image: url(../img/logotypes/DJI-logo.png);
+}
+.logotype-first:hover {
+  background-image: url(../img/logotypes/DJI-logo-hover.png);
+}
+.logotype-second {
+  background-image: url(../img/logotypes/SP-Gadgets-logo.png);
+}
+.logotype-second:hover {
+  background-image: url(../img/logotypes/SP-Gadgets-logo-hover.png);
+}
+.logotype-third {
+  background-image: url(../img/logotypes/GoPro-logo.png);
+}
+.logotype-third:hover {
+  background-image: url(../img/logotypes/GoPro-logo-hover.png);
+}
+.logotype-fourth {
+  background-image: url(../img/logotypes/VIVE-logo.png);
+}
+.logotype-fourth:hover {
+  background-image: url(../img/logotypes/VIVE-logo-hover.png);
+}
 /*information-contacts*/
 .information {
+  width: 1160px;
+  margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
   margin-top: 125px;
