@@ -188,23 +188,27 @@ ul {
   margin: 0;
 }
 .subnav-list {
+  width: 498px;
+  padding: 0;
   display: flex;
+  justify-content: flex-end;
 }
 .subnav-header {
-  justify-content: space-between;
+  width: 498px;
   margin: 0;
+  padding: 0;
 }
 .subnav-header li:last-child {
   margin-left: 65px;
 }
 .subnav-header li:first-child {
-  margin-right: 255px;
+  margin-right: 20px;
 }
 .subnav-header li {
-  border: 1px solid red;
   white-space: nowrap;
 }
 .subnav-header li a {
+  opacity: 0.7;
   position: relative;
 }
 .subnav-header li a::before {
@@ -213,18 +217,25 @@ ul {
   width: 20px;
   height: 10px;
   bottom: 47%;
-  left: -20px;
+  left: -17px;
   transform: translateY(50%);
   cursor: pointer;
 }
 .subnav-header li:first-child a::before {
   background: url(../img/icons/header-icons/login.svg) no-repeat;
 }
-.subnav-header li:nth-child(2) a::before {
-  background: url(../img/icons/header-icons/comparison.svg) no-repeat;
-}
 .subnav-header li:last-child a::before {
   background: url(../img/icons/header-icons/basket.svg) no-repeat;
+}
+.comparison-header,
+.comparison-footer {
+  margin-left: auto;
+}
+.comparison-header a::before {
+  background: url(../img/icons/header-icons/comparison.svg) no-repeat;
+}
+.exit-header {
+  opacity: 0.3;
 }
 .menu-products {
   background-color: var(--special-yellow);
@@ -733,10 +744,14 @@ ul {
   margin-top: 46px;
   margin-bottom: 73px;
 }
-.subnav-footer li:not(:first-child) {
-  margin-left: 63px;
+.subnav-footer li:last-child {
+  margin-left: 65px;
+}
+.subnav-footer li:first-child {
+  margin-right: 20px;
 }
 .subnav-footer li a {
+  opacity: 0.7;
   position: relative;
 }
 .subnav-footer li a::before {
@@ -744,19 +759,19 @@ ul {
   position: absolute;
   width: 20px;
   height: 10px;
-  bottom: 47%;
+  bottom: 46%;
   left: -20px;
   transform: translateY(50%);
   cursor: pointer;
 }
 .subnav-footer li:first-child a::before {
-  background: url(../img/icons/footer-icons/login.svg) no-repeat;
-}
-.subnav-footer li:nth-child(2) a::before {
-  background: url(../img/icons/footer-icons/comparison.svg) no-repeat;
+  background: url(../img/icons/footer-icons/login-active.svg) no-repeat;
 }
 .subnav-footer li:last-child a::before {
   background: url(../img/icons/footer-icons/basket.svg) no-repeat;
+}
+.comparison-footer a::before {
+  background: url(../img/icons/footer-icons/comparison.svg) no-repeat;
 }
 .footer-navigation-list {
   justify-content: space-around;
