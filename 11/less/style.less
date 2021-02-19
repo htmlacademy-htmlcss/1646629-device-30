@@ -217,21 +217,26 @@ ul{
 	margin: 0;
 }
 .subnav-list{
+	width: 498px;
 	display: flex;
+	padding: 0;
+	display:flex;
+	justify-content:flex-end;
 }
 .subnav-header{
-	justify-content:space-between;
+	width: 498px;
 	margin: 0;
+	padding: 0;
 	li:last-child{
 		margin-left: 65px;
 	}
 	li:first-child{
-		margin-right: 255px;
+		margin-right: 20px;
 	}
 	li{
-		border:1px solid red;
 		white-space: nowrap;
 		a{
+			opacity:0.7;
 			position:relative;
 			&::before{
 				content: '';
@@ -239,7 +244,7 @@ ul{
 				width: 20px;
 				height: 10px;
 				bottom:47%;
-				left:-20px;
+				left:-17px;
 				transform: translateY(50%);
 				cursor: pointer;
 			}
@@ -247,15 +252,20 @@ ul{
 		&:first-child a::before{
 			background:url(../img/icons/header-icons/login.svg) no-repeat;
 		}
-		&:nth-child(2) a::before{
-			background:url(../img/icons/header-icons/comparison.svg) no-repeat;
-		}
 		&:last-child a::before{
 			background:url(../img/icons/header-icons/basket.svg) no-repeat;
 		}
 	}
 }
-
+.comparison-header, .comparison-footer{
+	margin-left: auto;
+}
+.comparison-header a::before{
+	background:url(../img/icons/header-icons/comparison.svg) no-repeat;
+}
+.exit-header{
+	opacity:0.3;
+}
 .menu-products{
 	background-color: var(--special-yellow);
 	z-index: 2;
@@ -794,33 +804,38 @@ ul{
 	margin: 0;
 	margin-top: 46px;
 	margin-bottom: 73px;
-	li:not(:first-child){
-		margin-left: 63px;
+	li:last-child{
+		margin-left: 65px;
 	}
+	li:first-child{
+		margin-right: 20px;
+	}	
 	li{
 		a{
+			opacity:0.7;
 			position:relative;
 			&::before{
 				content: '';
 				position:absolute;
 				width: 20px;
 				height: 10px;
-				bottom:47%;
+				bottom:46%;
 				left:-20px;
 				transform: translateY(50%);
 				cursor: pointer;
 			}
 		}
 		&:first-child a::before{
-			background:url(../img/icons/footer-icons/login.svg) no-repeat;
-		}
-		&:nth-child(2) a::before{
-			background:url(../img/icons/footer-icons/comparison.svg) no-repeat;
+			background:url(../img/icons/footer-icons/login-active.svg) no-repeat;
 		}
 		&:last-child a::before{
 			background:url(../img/icons/footer-icons/basket.svg) no-repeat;
 		}
 	}
+}
+.comparison-footer a::before{
+	background: url(../img/icons/footer-icons/comparison.svg) no-repeat;
+
 }
 .footer-navigation-list{
 	justify-content:space-around;
@@ -1482,3 +1497,4 @@ ul{
 .hidden{
 	display:none;
 }
+/*Вроде всё сделал)*/
