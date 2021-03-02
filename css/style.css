@@ -97,6 +97,7 @@ ul {
 }
 .search {
   position: relative;
+  vertical-align: middle;
   display: inline-block;
   width: 150px;
   height: 20px;
@@ -294,6 +295,7 @@ ul {
   letter-spacing: 2px;
   width: 220px;
   display: inline-block;
+  vertical-align: middle;
   text-align: center;
   margin-right: 140px;
 }
@@ -372,6 +374,7 @@ ul {
   position: relative;
   top: -2px;
   display: inline-block;
+  vertical-align: middle;
 }
 .button-slide {
   margin-left: 18px;
@@ -633,6 +636,7 @@ ul {
 }
 .contact-us {
   display: inline-block;
+  vertical-align: middle;
   text-align: center;
   line-height: 22px;
   text-transform: uppercase;
@@ -899,6 +903,7 @@ ul {
   letter-spacing: 3px;
   width: 200px;
   display: inline-block;
+  vertical-align: middle;
   text-align: center;
   margin-right: 140px;
   margin-top: 50px;
@@ -1282,9 +1287,11 @@ ul {
   letter-spacing: 5%;
   line-height: 22px;
   display: inline-block;
+  vertical-align: middle;
 }
 .catalog-item span {
   display: inline-block;
+  vertical-align: middle;
   margin-top: 28px;
   font-family: "Gilroy", "Arial", sans-serif;
   font-size: 16px;
