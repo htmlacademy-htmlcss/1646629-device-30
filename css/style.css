@@ -208,7 +208,6 @@ ul {
   white-space: nowrap;
 }
 .subnav-header li a {
-  opacity: 0.7;
   position: relative;
 }
 .subnav-header li a::before {
@@ -234,8 +233,8 @@ ul {
 .comparison-header a::before {
   background: url(../img/icons/header-icons/comparison.svg) no-repeat;
 }
-.exit-header {
-  opacity: 0.3;
+.exit-header a {
+  color: rgba(0, 0, 0, 0.3);
 }
 .menu-products {
   background-color: var(--special-yellow);
@@ -702,8 +701,6 @@ ul {
 }
 .footer-content {
   width: 1160px;
-  display: grid;
-  grid-template-columns: 1fr 2fr 1fr;
   background-color: var(--basic-dark);
   color: var(--basic-white);
   height: 324px;
@@ -719,12 +716,17 @@ ul {
 .footer-content p {
   margin: 0;
 }
-.footer-content div:nth-child(3) {
+.footer-content div {
   display: flex;
-  flex-direction: column;
-  align-items: flex-end;
+  justify-content: space-between;
 }
-.footer-content div:nth-child(3) a {
+.footer-content div:nth-child(3) {
+  justify-content: center;
+  position: relative;
+}
+.footer-content div:nth-child(3) .html-logo {
+  position: absolute;
+  right: 0;
   margin-top: 67px;
 }
 .address {
@@ -743,6 +745,7 @@ ul {
   margin: 0;
   margin-top: 46px;
   margin-bottom: 73px;
+  width: 454px;
 }
 .subnav-footer li:last-child {
   margin-left: 65px;
@@ -751,7 +754,7 @@ ul {
   margin-right: 20px;
 }
 .subnav-footer li a {
-  opacity: 0.7;
+  color: rgba(255, 255, 255, 0.7);
   position: relative;
 }
 .subnav-footer li a::before {
@@ -774,19 +777,22 @@ ul {
   background: url(../img/icons/footer-icons/comparison.svg) no-repeat;
 }
 .footer-navigation-list {
-  justify-content: space-around;
-  margin-top: 141px;
+  padding-left: 0;
 }
 .footer-navigation-list a {
   font-family: "Gilroy Extrabold", "Arial", sans-serif;
   font-size: 18px;
   letter-spacing: 3px;
   line-height: 22px;
+  text-transform: uppercase;
+}
+.footer-navigation-list li:not(:last-child) {
+  margin-right: 36px;
 }
 .social-list {
   display: flex;
-  justify-content: center;
   grid-gap: 20px;
+  justify-content: center;
   margin-top: 67px;
 }
 /*write-us popap*/
@@ -945,7 +951,6 @@ ul {
 .wrapper {
   position: relative;
   background: linear-gradient(to right, #e5e5e5 50%, #ffffff 50%);
-  z-index: -2;
 }
 .wrapper-header {
   height: 70px;
