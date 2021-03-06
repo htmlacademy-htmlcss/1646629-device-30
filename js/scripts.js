@@ -15,54 +15,54 @@ const catalogPlus = document.querySelector('.catalog-plus'),
 	mapPopup = document.querySelector('.map'),
 	closeMap = document.querySelector('.close-map');
 
-catalogPlus.addEventListener('mouseenter', function(){
+catalogPlus.addEventListener('mouseenter', function () {
 	menu.classList.remove('hidden');
 });
-catalogPlus.addEventListener('mouseleave', function(){
+catalogPlus.addEventListener('mouseleave', function () {
 	menu.classList.add('hidden');
 });
-menu.addEventListener('mouseleave', function(){
+menu.addEventListener('mouseleave', function () {
 	menu.classList.add('hidden');
 });
-menu.addEventListener('mouseenter', function(){
+menu.addEventListener('mouseenter', function () {
 	menu.classList.remove('hidden');
 });
 
 
-map.addEventListener('click', function(){
+map.addEventListener('click', function () {
 	mapPopup.classList.remove('hidden');
 });
 
-closeMap.addEventListener('click', function(){
+closeMap.addEventListener('click', function () {
 	mapPopup.classList.add('hidden');
 });
 
-openContactPopup.addEventListener('click', function(){
+openContactPopup.addEventListener('click', function () {
 	writeUs.classList.remove('hidden');
 });
 
-closeWriteUs.addEventListener('click', function(){
+closeWriteUs.addEventListener('click', function () {
 	writeUs.classList.add('hidden');
 });
 
 
-for(let i=0; i<buttonsTab.length; i++){
-	if(i==0 || i==3 || i==6){
-		buttonsTab[i].addEventListener('click', function(){
+for (let i = 0; i < buttonsTab.length; i++) {
+	if (i == 0 || i == 3 || i == 6) {
+		buttonsTab[i].addEventListener('click', function () {
 			servicesItemCards[0].classList.remove('hidden');
 			servicesItemCards[1].classList.add('hidden');
 			servicesItemCards[2].classList.add('hidden');
 		});
 	}
-	if(i==1 || i==4 || i==7){
-		buttonsTab[i].addEventListener('click', function(){
+	if (i == 1 || i == 4 || i == 7) {
+		buttonsTab[i].addEventListener('click', function () {
 			servicesItemCards[0].classList.add('hidden');
 			servicesItemCards[1].classList.remove('hidden');
 			servicesItemCards[2].classList.add('hidden');
 		});
 	}
-	if(i==2 || i==5 || i==8){
-		buttonsTab[i].addEventListener('click', function(){
+	if (i == 2 || i == 5 || i == 8) {
+		buttonsTab[i].addEventListener('click', function () {
 			servicesItemCards[0].classList.add('hidden');
 			servicesItemCards[1].classList.add('hidden');
 			servicesItemCards[2].classList.remove('hidden');
@@ -72,13 +72,13 @@ for(let i=0; i<buttonsTab.length; i++){
 
 
 
-for(let i=0; i<buttonSlide.length; i++){
-	if(i==0 || i==3 || i==6){
-		buttonSlide[i].addEventListener('click', function(){
+for (let i = 0; i < buttonSlide.length; i++) {
+	if (i == 0 || i == 3 || i == 6) {
+		buttonSlide[i].addEventListener('click', function () {
 			slide[0].classList.remove('hidden');
 			slide[1].classList.add('hidden');
 			slide[2].classList.add('hidden');
-			for(let j=0; j<buttonSlide.length; j++){
+			for (let j = 0; j < buttonSlide.length; j++) {
 				buttonSlide[j].classList.remove('button-slide-active')
 			}
 			buttonSlide[0].classList.add('button-slide-active');
@@ -86,12 +86,12 @@ for(let i=0; i<buttonSlide.length; i++){
 			buttonSlide[6].classList.add('button-slide-active');
 		});
 	}
-	if(i==1 || i==4 || i==7){
-		buttonSlide[i].addEventListener('click', function(){
+	if (i == 1 || i == 4 || i == 7) {
+		buttonSlide[i].addEventListener('click', function () {
 			slide[0].classList.add('hidden');
 			slide[1].classList.remove('hidden');
 			slide[2].classList.add('hidden');
-			for(let j=0; j<buttonSlide.length; j++){
+			for (let j = 0; j < buttonSlide.length; j++) {
 				buttonSlide[j].classList.remove('button-slide-active')
 			}
 			buttonSlide[1].classList.add('button-slide-active');
@@ -99,12 +99,12 @@ for(let i=0; i<buttonSlide.length; i++){
 			buttonSlide[7].classList.add('button-slide-active');
 		});
 	}
-	if(i==2 || i==5 || i==8){
-		buttonSlide[i].addEventListener('click', function(){
+	if (i == 2 || i == 5 || i == 8) {
+		buttonSlide[i].addEventListener('click', function () {
 			slide[0].classList.add('hidden');
 			slide[1].classList.add('hidden');
 			slide[2].classList.remove('hidden');
-			for(let j=0; j<buttonSlide.length; j++){
+			for (let j = 0; j < buttonSlide.length; j++) {
 				buttonSlide[j].classList.remove('button-slide-active')
 			}
 			buttonSlide[2].classList.add('button-slide-active');
@@ -116,9 +116,9 @@ for(let i=0; i<buttonSlide.length; i++){
 
 
 
-searchInHeader.oninput = function(){
+searchInHeader.oninput = function () {
 	buttonSearch.classList.remove('hidden');
-	if(searchInHeader.value===''){
+	if (searchInHeader.value === '') {
 		buttonSearch.classList.add('hidden');
 	}
 }
