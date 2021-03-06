@@ -768,35 +768,35 @@ ul {
 }
 
 .logotype-first {
-  background-image: url(../img/logotypes/dji-logo.png);
+  background-image: url(../img/logotypes/1.png);
 }
 
 .logotype-first:hover {
-  background-image: url(../img/logotypes/dji-logo-hover.png);
+  background-image: url(../img/logotypes/11.png);
 }
 
 .logotype-second {
-  background-image: url(../img/logotypes/sp-gadgets-logo.png);
+  background-image: url(../img/logotypes/2.png);
 }
 
 .logotype-second:hover {
-  background-image: url(../img/logotypes/sp-gadgets-logo-hover.png);
+  background-image: url(../img/logotypes/22.png);
 }
 
 .logotype-third {
-  background-image: url(../img/logotypes/gopro-logo.png);
+  background-image: url(../img/logotypes/3.png);
 }
 
 .logotype-third:hover {
-  background-image: url(../img/logotypes/gopro-logo-hover.png);
+  background-image: url(../img/logotypes/33.png);
 }
 
 .logotype-fourth {
-  background-image: url(../img/logotypes/vive-logo.png);
+  background-image: url(../img/logotypes/4.png);
 }
 
 .logotype-fourth:hover {
-  background-image: url(../img/logotypes/vive-logo-hover.png);
+  background-image: url(../img/logotypes/44.png);
 }
 
 /*information-contacts*/
