@@ -132,6 +132,8 @@ ul {
   position: relative;
   vertical-align: middle;
   display: inline-block;
+  font-weight: 300;
+  line-height: 20.43;
   width: 150px;
   height: 20px;
   background-color: transparent;
@@ -196,6 +198,7 @@ ul {
 .catalog-plus {
   font-family: "Gilroy Extrabold", "Arial", sans-serif;
   font-size: 18px;
+  font-weight: 800;
   letter-spacing: 20%;
   line-height: 22px;
   position: relative;
@@ -276,11 +279,11 @@ ul {
   white-space: nowrap;
 }
 
-.subnav-header li a {
+.subnav-item a {
   position: relative;
 }
 
-.subnav-header li a::before {
+.subnav-item a::before {
   content: "";
   position: absolute;
   width: 20px;
@@ -291,11 +294,11 @@ ul {
   cursor: pointer;
 }
 
-.subnav-header li:first-child a::before {
+.subnav-item:first-child a::before {
   background: url(../img/icons/header-icons/login.svg) no-repeat;
 }
 
-.subnav-header li:last-child a::before {
+.subnav-item:last-child a::before {
   background: url(../img/icons/header-icons/basket.svg) no-repeat;
   top: 0;
 }
@@ -310,6 +313,7 @@ ul {
 
 .exit-header a {
   color: rgba(0, 0, 0, 0.3);
+  margin-left: 25px;
 }
 
 .menu-products {
@@ -371,6 +375,7 @@ ul {
 .slider h2 {
   white-space: wrap;
   font-size: 47px;
+  font-weight: 800;
   line-height: 58px;
   margin-top: 110px;
   margin-bottom: 0;
@@ -495,10 +500,11 @@ ul {
 }
 
 .button-slide {
-  margin-left: 12px;
+  margin-left: 14px;
   transform: translate(24px, 1px);
   width: 12px;
   height: 12px;
+  padding: 0;
   background-color: var(--basic-white);
   border: 1px solid black;
   border-radius: 50%;
@@ -541,20 +547,21 @@ ul {
 
 .popular-products h2 {
   width: 160px;
+  font-weight: 800;
   letter-spacing: 1px;
   transform: translateX(2px);
 }
 
-.popular-products a:hover .popular-icon {
+.popular-item-link:hover .popular-icon {
   background-color: var(--special-yellow-dark);
 }
 
-.popular-products a:focus img,
-.popular-products a:focus h2 {
+.popular-item-link:focus img,
+.popular-item-link:focus h2 {
   opacity: 30%;
 }
 
-.popular-products a:focus .popular-icon {
+.popular-item-link:focus .popular-icon {
   background-color: var(--special-yellow-dark);
 }
 
@@ -601,6 +608,8 @@ ul {
   background-color: transparent;
   z-index: 0;
   font-family: "Gilroy Extrabold", "Arial", sans-serif;
+  font-weight: 800;
+  line-height: 22.05px;
   letter-spacing: 3.5px;
   width: 160px;
   padding-left: 10px;
@@ -642,6 +651,7 @@ ul {
   line-height: 58px;
   margin-top: -30px;
   letter-spacing: 9.5px;
+  font-weight: 800;
 }
 
 .services-info p {
@@ -653,7 +663,7 @@ ul {
   letter-spacing: 1.5px;
 }
 
-.delivery li:first-child button {
+.delivery-item:first-child button {
   text-align: left;
   padding-left: 19px;
   width: 277px;
@@ -667,7 +677,7 @@ ul {
   margin-bottom: 40px;
 }
 
-.delivery li:first-child button::after {
+.delivery-btn-act::after {
   visibility: hidden;
 }
 
@@ -679,7 +689,7 @@ ul {
   margin-top: -29px;
 }
 
-.warranty li:nth-child(2) button {
+.warranty-item:nth-child(2) button {
   text-align: left;
   padding-left: 24px;
   width: 277px;
@@ -690,7 +700,7 @@ ul {
   margin-bottom: 30px;
 }
 
-.warranty li:nth-child(2) button::after {
+.warranty-item:nth-child(2) button::after {
   visibility: hidden;
 }
 
@@ -700,7 +710,7 @@ ul {
   margin-top: -45px;
 }
 
-.credit li:last-child button {
+.credit-item:last-child button {
   text-align: left;
   padding-left: 38px;
   width: 277px;
@@ -710,11 +720,11 @@ ul {
   margin-top: 30px;
 }
 
-.credit li:last-child button::after {
+.credit-item:last-child button::after {
   visibility: hidden;
 }
 
-.credit li:first-child {
+.credit-item:first-child {
   margin-bottom: 40px;
 }
 
@@ -817,6 +827,7 @@ ul {
   line-height: 58px;
   letter-spacing: 9.5px;
   margin-top: 0;
+  font-weight: 800;
   position: relative;
 }
 
@@ -896,6 +907,7 @@ ul {
   margin-left: 33px;
   padding-bottom: 0;
   margin-bottom: 0;
+  font-weight: 800;
 }
 
 .company-delivery-list li {
@@ -1006,12 +1018,12 @@ ul {
   margin-right: 65px;
 }
 
-.subnav-footer li a {
+.subnav-footer-item a {
   color: rgba(255, 255, 255, 0.7);
   position: relative;
 }
 
-.subnav-footer li a::before {
+.subnav-footer-item a::before {
   content: "";
   position: absolute;
   width: 20px;
@@ -1030,7 +1042,7 @@ ul {
   background: url(../img/icons/footer-icons/login.svg) no-repeat;
 }
 
-.subnav-footer li:last-child a::before {
+.subnav-footer-item:last-child a::before {
   background: url(../img/icons/footer-icons/basket.svg) no-repeat;
 }
 
@@ -1053,6 +1065,7 @@ ul {
   letter-spacing: 4px;
   line-height: 22px;
   text-transform: uppercase;
+  font-weight: 800;
 }
 
 .footer-navigation-list li:not(:last-child) {
@@ -1101,6 +1114,8 @@ ul {
   width: 720px;
   height: 130px;
   margin-top: 10px;
+  font-size: 14px;
+  line-height: 19.07px;
   background-color: var(--special-popup-input);
   border: none;
   resize: none;
@@ -1150,6 +1165,11 @@ ul {
   width: 760px;
 }
 
+.user-value label {
+  font-weight: 800;
+  line-height: 22.05px;
+}
+
 .user-value input {
   font-family: "Open sans", "Arial", sans-serif;
   width: 340px;
@@ -1157,6 +1177,8 @@ ul {
   padding-left: 20px;
   margin-bottom: 32px;
   margin-top: 10px;
+  font-size: 14px;
+  line-height: 19.07px;
   border: none;
   background-color: var(--special-popup-input);
 }
@@ -1320,6 +1342,7 @@ ul {
 
 .filter h3 {
   font-family: "Gilroy Extrabold", "Arial", sans-serif;
+  font-weight: 800;
   font-size: 16px;
   letter-spacing: 2px;
   background-size: 120%;
@@ -1333,6 +1356,7 @@ ul {
 
 .filter legend {
   font-family: "Gilroy Extrabold", "Arial", sans-serif;
+  font-weight: 800;
   font-size: 14px;
   line-height: 17px;
   letter-spacing: 1.5px;
@@ -1423,6 +1447,8 @@ ul {
   left: 41px;
   top: -10px;
   cursor: pointer;
+  font-size: 14px;
+  line-height: 19.07px;
 }
 
 .input-checkbox-list label::before {
@@ -1508,11 +1534,21 @@ ul {
   position: relative;
 }
 
+.min-price,
+.max-price {
+  position: relative;
+  top: -3px;
+}
+
 .range-price input {
   position: absolute;
   border: none;
   width: 60px;
   background: transparent;
+  font-family: "Gilroy", "Arial", sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 16.14px;
 }
 
 .range-price input:active {
@@ -1634,14 +1670,15 @@ ul {
 .catalog-list {
   display: flex;
   flex-wrap: wrap;
-  width: 828px;
+  width: 760px;
   margin: 0;
-  padding-left: 76px;
+  margin-left: 76px;
+  padding-left: 0px;
   padding-top: 69px;
 }
 
 .catalog-item {
-  width: 360px;
+  width: 358px;
   margin: 0;
   padding: 0;
   position: relative;
@@ -1658,6 +1695,7 @@ ul {
   margin-bottom: 48px;
   letter-spacing: 1px;
   line-height: 22px;
+  font-weight: 800;
   display: inline-block;
   vertical-align: middle;
 }
@@ -1672,7 +1710,7 @@ ul {
   font-size: 16px;
   line-height: 18px;
   letter-spacing: 1px;
-  transform: translate(1px, 1px);
+  transform: translate(3px, 1px);
 }
 
 .new-item {
@@ -1688,7 +1726,7 @@ ul {
   border: 2px solid rgba(0, 0, 0, 0.3);
   border-radius: 50%;
   top: 29px;
-  right: 27px;
+  right: 23px;
 }
 
 .new-item::before {
@@ -1697,7 +1735,7 @@ ul {
   font-family: "Gilroy Extrabold", "Arial", sans-serif;
   font-size: 12px;
   opacity: 0.3;
-  right: 46px;
+  right: 40px;
   top: 50px;
 }
 
@@ -1778,6 +1816,8 @@ ul {
   margin-left: 90px;
   margin-top: 22px;
   opacity: 0.7;
+  font-weight: 300;
+  line-height: 17.7;
 }
 
 .button-add .btn-add-comprasion:hover {
@@ -1805,6 +1845,8 @@ ul {
   text-transform: uppercase;
   letter-spacing: 1px;
   margin-top: -1px;
+  font-weight: 800;
+  line-height: 19.6px;
 }
 
 .catalog-navigation button:hover {
@@ -1819,6 +1861,7 @@ ul {
   display: flex;
   align-items: center;
   padding: 0;
+  font-weight: 800;
 }
 
 .page-number-list li:not(:last-child) {
