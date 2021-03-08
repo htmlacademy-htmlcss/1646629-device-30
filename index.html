@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="ru">
-
 <head>
 	<meta charset="utf-8">
 	<title>HTML Academy: Девайс</title>
@@ -9,9 +8,8 @@
 	<link rel="apple-touch-icon" href="favicon-32.png">
 	<link rel="manifest" href="manifest.webmanifest">
 	<link rel="stylesheet" type="text/css" href="css/normalize.css">
-	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/minstyle.css">
 </head>
-
 <body>
 	<header class="main-header">
 		<section class="header">
@@ -23,9 +21,9 @@
 					<button class="btn-search hidden" type="submit">Найти</button>
 				</form>
 				<ul class="subnav-list subnav-header">
-					<li><a href="#">Войти</a></li>
-					<li class="comparison-header"><a href="#">Сравнить</a></li>
-					<li><a href="#">Корзина</a></li>
+					<li class="subnav-item"><a href="#">Войти</a></li>
+					<li class="comparison-header subnav-item"><a href="#">Сравнить</a></li>
+					<li class="subnav-item"><a href="#">Корзина</a></li>
 				</ul>
 			</div>
 			<nav class="main-navigation main-navigation-header">
@@ -135,42 +133,42 @@
 		<section class="popular-products">
 			<ul class="popular-list">
 				<li class="popular-item">
-					<a href="catalog.html">
+					<a class="popular-item-link" href="catalog.html">
 						<div class="popular-icon"><img src="img/icons/popular-icons/virtual-reality.svg" width="97"
 								height="55" alt="Виртуальная реальность"></div>
 						<h2>Виртуальная реальность</h2>
 					</a>
 				</li>
 				<li class="popular-item">
-					<a href="catalog.html">
+					<a class="popular-item-link" href="catalog.html">
 						<div class="popular-icon"><img src="img/icons/popular-icons/selfie-stick.svg" width="86"
 								height="117" alt="Моноподы для селфи"></div>
 						<h2>Моноподы<br>для селфи</h2>
 					</a>
 				</li>
 				<li class="popular-item">
-					<a href="catalog.html">
+					<a class="popular-item-link" href="catalog.html">
 						<div class="popular-icon"><img src="img/icons/popular-icons/action-camera.svg" width="71"
 								height="87" alt="Экшн-камеры"></div>
 						<h2>Экшн-камеры</h2>
 					</a>
 				</li>
 				<li class="popular-item">
-					<a href="catalog.html">
+					<a class="popular-item-link" href="catalog.html">
 						<div class="popular-icon"><img src="img/icons/popular-icons/fitness-bracelet.svg" width="107"
 								height="65" alt="Фитнес-браслеты"></div>
 						<h2>Фитнес-браслеты</h2>
 					</a>
 				</li>
 				<li class="popular-item">
-					<a href="catalog.html">
+					<a class="popular-item-link" href="catalog.html">
 						<div class="popular-icon"><img src="img/icons/popular-icons/smart-watch.svg" width="56"
 								height="98" alt="Умные часы"></div>
 						<h2>Умные часы</h2>
 					</a>
 				</li>
 				<li class="popular-item">
-					<a href="catalog.html">
+					<a class="popular-item-link" href="catalog.html">
 						<div class="popular-icon"><img src="img/icons/popular-icons/quadrocopter.svg" width="132"
 								height="69" alt="Квадрокоптеры"></div>
 						<h2>Квадрокоптеры</h2>
@@ -182,9 +180,9 @@
 			<section class="services-list">
 				<section class="services-item delivery">
 					<ul class="services-navigation">
-						<li><button>доставка</button></li>
-						<li><button>гарантия</button></li>
-						<li><button>кредит</button></li>
+						<li class="delivery-item"><button class="delivery-btn-act">доставка</button></li>
+						<li class="delivery-item"><button>гарантия</button></li>
+						<li class="delivery-item"><button>кредит</button></li>
 					</ul>
 					<div class="services-info">
 						<h2>Доставка</h2>
@@ -195,9 +193,9 @@
 				</section>
 				<section class="services-item warranty hidden">
 					<ul class="services-navigation">
-						<li><button>доставка</button></li>
-						<li><button>гарантия</button></li>
-						<li><button>кредит</button></li>
+						<li class="warranty-item"><button>доставка</button></li>
+						<li class="warranty-item"><button>гарантия</button></li>
+						<li class="warranty-item"><button>кредит</button></li>
 					</ul>
 					<div class="services-info">
 						<h2>Гарантия</h2>
@@ -208,9 +206,9 @@
 				</section>
 				<section class="services-item credit hidden">
 					<ul class="services-navigation">
-						<li><button>доставка</button></li>
-						<li><button>гарантия</button></li>
-						<li><button>кредит</button></li>
+						<li class="credit-item"><button>доставка</button></li>
+						<li class="credit-item"><button>гарантия</button></li>
+						<li class="credit-item"><button>кредит</button></li>
 					</ul>
 					<div class="services-info">
 						<h2>Кредит</h2>
@@ -261,12 +259,12 @@
 	</main>
 	<footer class="footer">
 		<div class="footer-content">
-			<div><a class="logo-link" href="index.html"><img class="logo" src="img/icons/footer-icons/logo-footer.svg"
+			<div><a class="logo-link" href="#"><img class="logo" src="img/icons/footer-icons/logo-footer.svg"
 						width="163" height="35" alt="Логотип"></a>
 				<ul class="subnav-list subnav-footer">
-					<li class="log-act"><a href="#">Войти</a></li>
-					<li class="comparison-footer"><a href="#">Сравнить</a></li>
-					<li><a href="#">Корзина</a></li>
+					<li class="log-act subnav-footer-item"><a href="#">Войти</a></li>
+					<li class="comparison-footer subnav-footer-item"><a href="#">Сравнить</a></li>
+					<li class="subnav-footer-item"><a href="#">Корзина</a></li>
 				</ul>
 			</div>
 			<div>
@@ -291,8 +289,7 @@
 								alt="Twitter"></a></li>
 				</ul>
 				<a class="html-logo" href="https://htmlacademy.ru/intensive/htmlcss"><img
-						src="img/icons/footer-icons/HTML-Academy-logo.svg" width="27" height="34"
-						alt="HTML Academy"></a>
+						src="img/icons/footer-icons/html-academy.svg" width="27" height="34" alt="HTML Academy"></a>
 			</div>
 		</div>
 	</footer>
@@ -326,7 +323,6 @@
 				width="994" height="593" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
 		</div>
 	</div>
-	<script src="js/scripts.js"></script>
+	<script src="js/minscripts.js"></script>
 </body>
-
 </html>

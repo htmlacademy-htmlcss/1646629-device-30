@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="ru">
-
 <head>
   <meta charset="UTF-8">
   <title>HTML Academy: Девайс</title>
@@ -9,9 +8,8 @@
   <link rel="apple-touch-icon" href="favicon-32.png">
   <link rel="manifest" href="manifest.webmanifest">
   <link rel="stylesheet" type="text/css" href="css/normalize.css">
-  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/minstyle.css">
 </head>
-
 <body>
   <header class="main-header">
     <section class="header">
@@ -23,10 +21,10 @@
           <button class="btn-search hidden" type="submit">Найти</button>
         </form>
         <ul class="subnav-list subnav-header">
-          <li><a href="#">Валентин Петухов</a></li>
-          <li class="login"><a href="#">Выйти</a></li>
-          <li class="comparison-header"><a href="#">Сравнить</a></li>
-          <li><a href="#">Корзина</a></li>
+          <li class="subnav-item"><a href="#">Валентин Петухов</a></li>
+          <li class="subnav-item exit-header"><a href="#">Выйти</a></li>
+          <li class="comparison-header subnav-item"><a href="#">Сравнить</a></li>
+          <li class="subnav-item"><a href="#">Корзина</a></li>
         </ul>
       </div>
       <nav class="main-navigation main-navigation-header">
@@ -38,7 +36,7 @@
         </ul>
       </nav>
     </section>
-    <section class="menu-products">
+    <section class="menu-products hidden">
       <div class="menu-list">
         <ul class="menu-column">
           <li><a href="#">Виртуальная реальность</a></li>
@@ -55,7 +53,6 @@
       </div>
     </section>
   </header>
-
   <main class="container">
     <ul class="breadcrumbs-list">
       <li><a href="index.html">Главная</a></li>
@@ -71,13 +68,15 @@
             <form method="get" action="https://echo.htmlacademy.ru/">
               <fieldset class="input-range">
                 <legend>Стоимость</legend>
-                <div aria-label="Выбор диапозона цены" class="input-range">
+                <div class="input-range">
                   <div class="range-controls">
                     <div class="scale">
-                      <div class="bar" style="width:65%; margin-left: 20%;"></div>
+                      <div class="bar" style="width:65%; margin-left: 0%;"></div>
                     </div>
-                    <div class="toggle toggle-min" tabindex="0" style="left: 20%"></div>
-                    <div class="toggle toggle-max" tabindex="0" style="left: 75%;"></div>
+                    <div aria-label="Настройка минимальной цены" class="toggle toggle-min" tabindex="0"
+                      style="left: 0%"></div>
+                    <div aria-label="Настройка максимальной цены" class="toggle toggle-max" tabindex="0"
+                      style="left: 57%;"></div>
                   </div>
                   <div class="range-price">
                     <label class="min-price">от <input type="number" name="min-price" value="0"></label>
@@ -143,8 +142,7 @@
                   <a href="#">
                     <h4>Любительская селфи-палка</h4>
                   </a>
-                    <span>1 100 руб.</span>
-                  
+                  <span>1 100 руб.</span>
                 </div>
               </li>
               <li class="catalog-item">
@@ -160,8 +158,7 @@
                   <a href="#">
                     <h4>Профессиональная<br>селфи-палка</h4>
                   </a>
-                    <span>1 500 руб.</span>
-                  
+                  <span>1 500 руб.</span>
                 </div>
               </li>
               <li class="catalog-item">
@@ -177,8 +174,7 @@
                   <a href="#">
                     <h4>Непотопляемая<br>селфи-палка</h4>
                   </a>
-                    <span>1 500 руб.</span>
-                  
+                  <span>1 500 руб.</span>
                 </div>
               </li>
               <li class="catalog-item new-item">
@@ -194,8 +190,7 @@
                   <a href="#">
                     <h4>Селфи-палка «Следуй за мной»</h4>
                   </a>
-                    <span>1 900 руб.</span>
-                  
+                  <span>1 900 руб.</span>
                 </div>
               </li>
             </ul>
@@ -218,10 +213,10 @@
       <div><a class="logo-link" href="index.html"><img class="logo" src="img/icons/footer-icons/logo-footer.svg"
             width="163" height="35" alt="Логотип"></a>
         <ul class="subnav-list subnav-footer">
-          <li class="user-name-sub"><a href="#">Валентин Петухов</a></li>
-          <li class="exit"><a href="#">Выйти</a></li>
-          <li class="comparison-footer"><a href="#">Сравнить</a></li>
-          <li><a href="#">Корзина</a></li>
+          <li class="subnav-footer-item user-name-sub"><a href="#">Валентин Петухов</a></li>
+          <li class="subnav-footer-item exit"><a href="#">Выйти</a></li>
+          <li class="comparison-footer subnav-footer-item"><a href="#">Сравнить</a></li>
+          <li class="subnav-footer-item"><a href="#">Корзина</a></li>
         </ul>
       </div>
       <div>
@@ -243,10 +238,10 @@
           <li><a href="#"><img src="img/icons/footer-icons/twitter.svg" width="32" height="32" alt="Twitter"></a></li>
         </ul>
         <a class="html-logo" href="https://htmlacademy.ru/intensive/htmlcss"><img
-            src="img/icons/footer-icons/HTML-Academy-logo.svg" width="27" height="34" alt="HTML Academy"></a>
+            src="img/icons/footer-icons/html-academy.svg" width="27" height="34" alt="HTML Academy"></a>
       </div>
     </div>
   </footer>
+  <script src="js/minscripts.js"></script>
 </body>
-
 </html>
