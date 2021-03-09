@@ -358,7 +358,7 @@ ul {
   z-index: 0;
   position: relative;
   margin-top: -128px;
-  margin-bottom: 120px;
+  margin-bottom: 117px;
   font-family: "Gilroy Extrabold", "Arial", sans-serif;
 }
 
@@ -379,6 +379,7 @@ ul {
   line-height: 58px;
   margin-top: 110px;
   margin-bottom: 0;
+  white-space: nowrap;
 }
 
 .slider p {
@@ -391,13 +392,15 @@ ul {
   position: relative;
   font-size: 18.5px;
   line-height: 22px;
-  letter-spacing: 3px;
+  letter-spacing: 3.5px;
   width: 220px;
   display: inline-block;
   vertical-align: middle;
   text-align: center;
-  margin-right: 140px;
+  margin-right: 137px;
   font-weight: 800;
+  text-transform: uppercase;
+  padding-left: 3px;
 }
 
 .slider a:hover {
@@ -472,6 +475,7 @@ ul {
   display: grid;
   grid-template-columns: 1fr 1fr;
   padding: 0 89px;
+  height: 506px;
 }
 
 .slider-item img {
@@ -480,16 +484,33 @@ ul {
 }
 
 .slider-item:nth-child(2) img {
-  margin-top: 50px;
+  margin-top: 40px;
+  margin-left: 31px;
+}
+
+.slider-item:nth-child(2) h1 {
+  right: 51px;
 }
 
 .slider-item:nth-child(3) img {
-  margin-top: 105px;
-  margin-left: -60px;
+  margin-top: 100px;
+  margin-left: -55px;
+}
+
+.slider-item:nth-child(3) h1 {
+  right: 50px;
+}
+
+.slider-item:nth-child(3) td {
+  word-spacing: 3px;
 }
 
 .slider-information {
   margin-left: 21px;
+}
+
+.slider-item:nth-child(3) .slider-information {
+  margin-left: 44px;
 }
 
 .buttons-slider {
@@ -513,7 +534,7 @@ ul {
 
 .button-slide-active {
   position: relative;
-  top: -4px;
+  top: -5px;
   width: 12px;
   height: 12px;
   background-color: var(--basic-white);
@@ -674,7 +695,7 @@ ul {
 
 .delivery li:nth-child(2) {
   margin-top: 30px;
-  margin-bottom: 40px;
+  margin-bottom: 35px;
 }
 
 .delivery-btn-act::after {
